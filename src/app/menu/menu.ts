@@ -10,7 +10,7 @@ export const MenuRoutes: MenuInfoInterface[] = [
   },
   {
     path: 'nombre',
-    title: 'Persona',
+    title: 'Ver personas',
     icon: 'fa-solid fa-user',
     classCss: 'd-flex justify-content-center align-items-center p-2',
     submenu: [],
