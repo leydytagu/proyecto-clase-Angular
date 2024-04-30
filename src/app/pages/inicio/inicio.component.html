@@ -1,0 +1,37 @@
+@if (mostrarTitulo){ }
+
+<hr />
+
+<button class="btn btn-primary" (click)="abrirModal()">
+  <i class="fa-solid fa-plus"></i>
+  Este es el modal
+</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Ciudad</th>
+      <th>Documento</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(persona of personas; track $index){
+    <tr>
+      <td>
+        {{ persona.nombre }}
+      </td>
+      <td>
+        {{ persona.edad }}
+      </td>
+      <td>
+        {{ persona.ciudad }}
+      </td>
+      <td>
+        {{ persona.documento }}
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

@@ -1,0 +1,34 @@
+<form class="formulario col-4">
+  <div class="mb-3">
+    <label for="tarea" class="form-label">Nombre de la tarea</label>
+    <input
+      type="text"
+      class="form-control"
+      name="tarea"
+      id="tarea"
+      [(ngModel)]="tarea"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="observaciones" class="form-label">Observaciones</label>
+    <input
+      type="text"
+      name="observaciones"
+      class="form-control"
+      id="observaciones"
+      [(ngModel)]="observaciones"
+    />
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="agregarTarea()">
+    Agregar
+  </button>
+</form>
+
+<app-tabla
+  [columnas]="columnas"
+  [data]="misTareas"
+  [titulo]="titulo"
+  (onInformacion)="recibirInfoTareas($event)"
+></app-tabla>

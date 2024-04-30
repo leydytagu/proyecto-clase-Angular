@@ -1,0 +1,16 @@
+.panel{
+    padding: 20px;
+
+    h2 {
+        color: brown;
+    }
+    .lista{
+
+        li{
+            padding: 10px;
+            color: darkgreen;
+            font-size: 20px;
+        }
+    }
+
+}

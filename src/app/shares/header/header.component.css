@@ -1,0 +1,26 @@
+h1 {
+    color: black;
+    text-align: center;
+    border: 2px solid purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+
+    li a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        color: darkgreen;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid dodgerblue;
+
+        &.activo {
+            background-color: dodgerblue;
+            color: white;
+        }
+    }   
+}

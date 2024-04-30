@@ -1,0 +1,10 @@
+<article class="panel">
+  <h2>Lista de usuarios</h2>
+
+  <app-tabla
+    [data]="usuarios"
+    [titulo]="'Lista de usuarios'"
+    [columnas]="columnas"
+    (onInformacion)="recibirInfoUsuarios($event)"
+  ></app-tabla>
+</article>
