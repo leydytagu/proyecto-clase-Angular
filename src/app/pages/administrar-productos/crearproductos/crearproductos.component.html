@@ -1,0 +1,18 @@
+<form [formGroup]="productoForm" (ngSubmit)="crearProoducto()">
+  <div class="mb-3">
+    <label class="form-label"> Nombre </label>
+    <input type="text" class="form-control" formControlName="nombre" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label"> Telefono </label>
+    <input type="tel" class="form-control" formControlName="telefono" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label"> Direccion </label>
+    <input type="email" class="form-control" formControlName="direccion" />
+  </div>
+
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>

@@ -8,8 +8,9 @@ import { AcercaDeComponent } from './pages/inicio/acerca-de/acerca-de.component'
 import { ArticuloComponent } from './pages/articulo/articulo.component';
 import { FooterComponent } from './shares/footer/footer.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
-import { ProductosComponent } from './productos/productos.component';
+import { ProductosComponent } from './pages/administrar-productos/productos/productos.component';
 import { ListaTareasComponent } from './pages/lista-tareas/lista-tareas.component';
+import { CrearproductosComponent } from './pages/administrar-productos/crearproductos/crearproductos.component';
 
 export const routes: Routes = [
   {
@@ -35,6 +36,11 @@ export const routes: Routes = [
         path: 'productos',
         title: 'Mis productos',
         component: ProductosComponent,
+      },
+      {
+        path: 'crear-productos',
+        title: 'Crear productos',
+        component: CrearproductosComponent,
       },
       {
         path: 'tables',
