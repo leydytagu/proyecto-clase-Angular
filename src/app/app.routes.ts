@@ -11,6 +11,7 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { ProductosComponent } from './pages/administrar-productos/productos/productos.component';
 import { ListaTareasComponent } from './pages/lista-tareas/lista-tareas.component';
 import { CrearproductosComponent } from './pages/administrar-productos/crearproductos/crearproductos.component';
+import { LoginComponent } from './pages/autenticacion/login/login.component';
 
 export const routes: Routes = [
   {
@@ -73,5 +74,10 @@ export const routes: Routes = [
         component: ArticuloComponent,
       },
     ],
+  },
+  {
+    path: 'login',
+    title: 'Login',
+    component: LoginComponent,
   },
 ];
